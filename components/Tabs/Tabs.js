@@ -75,3 +75,10 @@ const links = document.querySelectorAll('.tabs-link');
 links.forEach(function(link){
    new TabLink(link);
 })
+
+
+// ANIMATION
+window.onload = function(){
+  var logo = document.getElementsByClassName("headerimg");
+  TweenLite.to(logo, 1, {left:"632px"});
+}
